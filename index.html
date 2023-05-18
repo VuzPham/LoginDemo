@@ -1,0 +1,280 @@
+<!-- Pham Nguyen Vu
+Login - Register - ForgotPass Table -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website login & register</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="font/themify-icons/assets/themify-icons/themify-icons.css">
+
+   
+</head>
+<body style="background: url(assets/img/anhnen.jpg);">
+    <div id="header">
+        <img class="img-header" src="assets/img/logo.png">
+        <ul class="navigation">
+            <li><a href="#" class="Home-header">Trang chủ</a></li>
+            <li><a href="#" class="Inforcompany-header">Thông tin doanh nghiệp</a></li>
+            <li><a href="#" class="contact-header">Liên hệ</a></li>
+            <li><a href="#" class="service-header">Dịch Vụ</a></li>
+            <li><button class="login-header">Đăng nhập</button></li>
+        </ul>
+    </div>
+
+    <div id="wraper">
+        <h2 class="title">Đăng nhập</h2>
+        <div class="form-box ">
+            <form action="#">
+                <div class="input-box">
+                    <i class="ti-email icon" ></i>
+                    <input id="email-login" type="email" required>
+                    <label>Email</label>
+                    
+                </div>
+                <div class="input-box">
+                    <i class="ti-lock icon"></i>
+                    <input id="password-login" type="password" required>
+                    <label>Mật khẩu</label>
+                </div>
+                
+                <div class="container">
+                    Ghi nhớ đăng nhập &nbsp<input type="checkbox">
+                    <a href="#" class="rt-forgotpassword">Quên mật khẩu?</a>
+                </div>
+                <button class="handle-button">Đăng Nhập</button>
+                <p class="note-register" style="text-align: center;">Nếu như bạn chưa có tài khoản <a href="#" class="rt-register">Đăng ký ngay!</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="register">
+        <i class="ti-close icon-close"></i>
+        <h2 class="title">Đăng Ký</h2>
+        <div class="form-box ">
+            <form action="#">
+                <div class="input-box">
+                    <i class="ti-user icon"></i>
+                    <input id="name-reg" type="text" required>
+                    <label>Họ tên người dùng</label>
+                </div>
+                <div class="input-box">
+                    <i class="ti-email icon"></i>
+                    <input id="email-reg" type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <i class="ti-lock icon"></i>
+                    <input id="password-reg" type="password" required>
+                    <label>Mật khẩu</label>
+                </div>
+                <div class="input-box">
+                    <i class="ti-lock icon"></i>
+                    <input id="Repassword-reg" type="password" required>
+                    <label>Nhập lại mật khẩu</label>
+                </div>
+                <div class="container">
+                Chấp nhận <a href="#">chính sách</a>&nbsp<input type="checkbox" id="policy-reg">
+                </div>
+                <button class="handle-button">Đăng Ký</button>
+                <p class="note-register" style="text-align: center; margin: 10px 0px;">Bạn đã có tài khoản <a href="#" class="rt-login">Đăng nhập ngay!</a></p>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="forgot-password" class="first">
+        <i class="ti-close icon-close"></i>
+        <h2 class="title">Quên mật khẩu</h2>
+        <div class="form-box ">
+            <form action="#">
+                <div class="input-box">
+                    <i class="ti-email icon"></i>
+                    <input type="email" class="email-user email" required>
+                    <label>Email</label>
+                </div>
+                <button class="handle-button">Tiếp tục</button>
+                <p class="note-register" style="text-align: center; margin: 10px 0px;">Bạn đã có tài khoản <a href="#" class="rt-login">Đăng nhập ngay!</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="forgot-password" class="second">
+        <i class="ti-close icon-close"></i>
+        <h2 class="title">Quên mật khẩu</h2>
+        <div class="form-box ">
+            <form action="#">
+                <div style="text-align: center;" class="font-bold"> 
+                    <i class="ti-user" style="font-size: 1.5em; font-weight: 500;"></i>
+                    <p class="wellcome-user" style="margin-top: 10px;">Chào mừng quay trở lại</p>
+                    <p class="countdow-OTP">Mã OTP đã gửi tới bạn Có hiệu lực trong vòng</p>
+                </div>
+               
+                <div class="input-box">
+                    <i class="ti-key icon"></i>
+                    <input type="text" id="OTP" required>
+                    <label>Nhập OTP</label>
+                </div>
+                <button class="handle-button">Tiếp tục</button>
+               
+            </form>
+        </div>
+    </div>
+
+    <div id="forgot-password" class="third">
+        <i class="ti-close icon-close"></i>
+        <h2 class="title">Quên mật khẩu</h2>
+        <div class="form-box ">
+            <form action="#">
+                <div class="input-box">
+                    <i class="ti-lock icon"></i>
+                    <input id="password-qmk" type="password" required>
+                    <label>Mật khẩu Mới</label>
+                </div>
+                <div  class="input-box">
+                    <i class="ti-lock icon"></i>
+                    <input id="repassword-qmk" type="password" required>
+                    <label>Nhập Lại Mật khẩu</label>
+                </div>
+                <button class="handle-button">Tiếp tục</button>
+               
+            </form>
+        </div>
+    </div>
+
+
+        <div id="contact" class="contact">
+            <i class="ti-close icon-close"></i>
+            <h2 class="title">Liên Hệ</h2>
+            <div class="row_padding32">
+                <div class="address">
+                        <i class="ti-location-pin icon"></i>
+                        &nbsp &nbsp Viet Nam, VNA<br>
+                        <i class="ti-mobile icon"></i>
+                        &nbsp &nbsp Phone: +84 34328540 <br>
+                        <i class="ti-email icon"></i>
+                        &nbsp &nbsp Email: phamnguyenvu287@gmail.com<br>
+                </div>
+
+                <div class="information">
+                    <form target="_blank">
+                        <div class="haft">
+                            <input type="text" placeholder="Name" class="name-space-if">
+                            &nbsp
+                            <input type="text" placeholder="Email" class="email-space-if">
+                        </div>
+                        <input type="text" style="width: 100%;" placeholder="Message" class="message-space-if">
+                    </form>
+                    <button class="send">SEND</button>
+                </div>
+            </div>
+       
+        
+        <div id="footer"> 
+            <div class="endfooter">
+                <a href="https://www.instagram.com/vuzpham287/" target="_blank"><i class="ti-instagram icon"></i></a>
+                <a href="https://www.facebook.com/phamnguyen.vu.106" target="_blank"><i class="ti-facebook icon"></i></a>
+                <a href=""><i class="ti-google icon"></i></a>
+                <a href="https://github.com/VuzPham" target="_blank"><i class="ti-github icon"></i></a>
+                <a href=""><i class="ti-twitter-alt icon"></i></a>
+                <p style="margin-top: 10px;">Powered by Techsee</p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <!-- Thông tin về doanh nghiệp -->
+        <div id="information-company">
+        <div class="tabs">
+          <div class="tab-item active">
+            Thành Lập
+          </div>
+          <div class="tab-item">
+            <i class="tab-icon fas fa-cog"></i>
+            Đội ngũ nhân viên
+          </div>
+          <div class="tab-item">
+            <i class="tab-icon fas fa-plus-circle"></i>
+            Quy Mô
+          </div>
+          <div class="tab-item">
+            <i class="tab-icon fas fa-pen-nib"></i>
+            Tầm nhìn tương lai
+          </div>
+          <div class="line"></div>
+        </div>
+
+
+        <!-- Tab content -->
+        <div class="tab-content">
+          <div class="tab-pane active">
+            <h2>Thành Lập</h2>
+            <hr>
+            <ul>
+                <li><p>Tháng 3/2004: Ra quyết định thành lập công ty</p></li>
+                <li><p>Tháng 10/2004, ban giám đốc công ty quyết định khai trương siêu thị đầu tiên tại 89A, Nguyễn Đình Chiểu, Tp.HCM </p></li>
+                <li><p>Tháng 1/2005 siêu thị thứ 2 ra mắt tại số 330 Cộng Hòa (TPHCM).</p></li>
+                <li><p>Tháng 1/2006, siêu thị thứ 3 được khai trương tại 26 Phan Đăng Lưu và 2 tháng sau lại thêm 1 cửa hàng nữa ra đời tại 182A, Nguyễn Thị Minh Khai.</p></li>
+                <li><p>Giai đoạn 2007 – 2009 là giai đoạn Techsee.com mở rộng ở TPHCM, Đà Nẵng và Hà Nội.</p>
+                 <li><p>Đến cuối năm 2009, Techsee.com có tổng cộng 38 siêu thị với 19 siêu thị tại TPCHM, 5 siêu thị tại Hà Nội, 2 siêu thị tại Đà Nẵng và 12 siêu thị khác tại các tỉnh Đồng Nai, Long An, Bình Dương, Cà Mau,…</li>
+                <li><p>Đến cuối năm 2009, Techsee.com có tổng cộng 38 siêu thị với 19 siêu thị tại TPCHM, 5 siêu thị tại Hà Nội, 2 siêu thị tại Đà Nẵng và 12 siêu thị khác tại các tỉnh Đồng Nai, Long An, Bình Dương, Cà Mau,… 
+                    2007 cũng là năm Công ty TNHH Thế Giới Di Động chuyển đổi sang Công ty Cổ phần để mở rộng cơ hội phát triển.</p></li>
+                <li><p>Từ năm 2010 tới 2011 đánh dấu bước phát triển vượt bậc với sự ra đời liên tiếp của các siêu thị Techsee.com. Đoàn quân Techsee.com đã thực hiện cuộc dàn quân đầy kiêu hãnh, khắp 
+                    nơi trên cả nước đều có sự hiện diện của màu vàng đen đặc trưng. Cuối năm 2010, Techsee.com tăng gấp đôi số siêu thị so với năm 2009, cuối năm 2011, số siêu thị tăng lên gần gấp 3 so với năm 2010.</p></li>
+            </ul>
+            </div>
+          <div class="tab-pane">
+            <h2>Đội ngũ nhân viên</h2>
+            <hr>
+            <ul>
+                <li><p>Hội Đồng Quản Trị do Đại hội đồng cổ đông tín nhiệm bầu ra. Hội đồng quản trị là cơ quan quản trị toàn bộ mọi hoạt động của công ty, các chiến lược, kế hoạch sản xuất và kinh doanh trong nhiệm kỳ của mình.</p></li>
+                <li><p>Ban Giám đốc sẽ chịu trách nhiệm về các mặt hoạt động của công ty trước Hội đồng Quản trị và pháp luật hiện hành, quyết định các chủ trương, chính sách, mục tiêu chiến lược của công ty, đồng thời giám sát và kiểm tra tất cả các hoạt động về sản xuất kinh doanh, đầu tư của công ty.</p></li>
+            </ul>
+            <h4>Gồm có 5 khối hoạt động chính và độc lập với nhau, với đội ngũ nhân viên phần lớn là trình độ cao đẳng, đại học và một số sau đại học.</h4>
+            <ul style="list-style-type: decimal;">
+                <li><p>Phòng kiểm soát nội bộ</p></li>
+                <li><p>Khối tài chính</p></li>
+                <li><p>Khối hành chính nhân sự</p></li>
+                <li><p>Khối Công nghệ thông tin</p></li>
+                <li><p>Khối Kinh doanh – Tiếp thị</p></li>
+            </ul>
+          </div>
+          <div class="tab-pane">
+            <h2>Quy Mô</h2>
+            <hr>
+            <p style="padding: 10px 0px;">TechSee có hệ thống văn phòng tại 27 quốc gia trên thế giới, và hạ tầng viễn thông phủ khắp 59/63 tỉnh, thành phố tại Việt Nam. Công ty đặt trụ sở chính tại Tòa nhà TechSee, số 10 Phố Phạm Văn Bạch, Phuờng Dịch Vọng, Quận Cầu Giấy, Thành phố Hà Nội, với 8 công ty thành viên và 3 công ty liên kết.</p>
+            <h4>8 Công ty thành viên:</h4>
+            <ul>
+                <li>Công ty TNHH Phần mềm TechSee (TechSee Software)</li>
+                <li>Công ty TNHH Hệ thống Thông tin TechSee (TechSee Information System)</li>
+                <li>Công ty Cổ phần Viễn thông TechSee (TechSee Telecom)</li>
+                <li>Công ty Cổ phần Dịch vụ Trực tuyến TechSee (TechSee Online)</li>
+                <li>Công ty TNHH Giáo dục TechSee (TechSee Education)</li>
+                <li>Công ty TNHH Đầu tư TechSee (TechSee Investment)</li>
+                <li>Công ty TNHH TechSee Smart Cloud (TechSee Smart Cloud)</li>
+                <li>Công ty TNHH TechSee Digital (TechSee Digital)</li>
+            </ul>
+            <h4>2 Công ty liên kết:</p></h4>
+            <ul>
+                <li>Công ty Cổ phần Synnex TechSee (Synnex TechSee)</li>
+                <li>Công ty Cổ phần Bán lẻ Kỹ thuật số TechSee (TechSee Retail)</li>
+            </ul>
+          </div>
+          <div class="tab-pane">
+            <h2>Tầm nhìn tương lai</h2>
+            <hr>
+            <ul>
+                <li><p>Tương tác qua màn hình. Khoảng 15% cửa hàng bán lẻ trong tương lai sẽ bao gồm các lối đi mua sắm như những gì chúng ta thấy ngày nay, nhưng được phi vật chất hóa. “Sẽ không có sản phẩm vật chất. Thay vào đó là các màn hình tương tác, được cải tiến tốt, độ nét cao để bạn có thể xem qua và danh mục sản phẩm sẽ được tối ưu hóa theo sở thích của bạn nếu bạn đã ở trong hệ thống với tư cách là khách hàng trung thành</p></li>
+                <li><p>Các trung tâm thực hiện. 35% tiếp theo của cửa hàng sẽ là “cửa hàng tối” hoặc một cơ sở bán lẻ trông giống hoặc là một phần của cửa hàng thông thường, nhưng được sử dụng để thực hiện các đơn đặt hàng trực tuyến - một loại trung tâm thực hiện vi mô. Best Buy đã sử dụng các cửa hàng làm trung tâm thực hiện để giao hàng tại địa phương nhanh chóng. Các cửa hàng Whole Foods cung cấp các đơn đặt hàng trực tuyến từ cửa hàng và Amazon Fresh, với một số cửa hàng chỉ dành để thực hiện các đơn đặt hàng.</p></li>
+                <li><p>Phần còn lại của một cửa hàng sẽ được dành cho các trải nghiệm - một môi trường giống như lối đi lát ván. Đây sẽ là nền tảng xây dựng trải nghiệm, nơi chúng tôi có thể tăng mức độ tương tác và giá trị lâu dài của người tiêu dùng, sau đó nâng cao lòng trung thành với thương hiệu.Sau đó, có thể mua sản phẩm ở bất kỳ đâu họ muốn, vì họ không nhận thức được bất kỳ sự phân biệt kênh nào như chúng tôi. </p></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+</html>
